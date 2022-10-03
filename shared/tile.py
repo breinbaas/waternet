@@ -3,6 +3,7 @@ from typing import Any, Optional
 import rasterio as rio
 from rasterio.transform import Affine
 from rasterio.crs import CRS
+import numpy as np
 
 
 class Tile(BaseModel):
@@ -19,11 +20,20 @@ class Tile(BaseModel):
     data: Any = None
     profile: Any = None
 
+    @classmethod
+    def from_filename(self, filename: str) -> "Tile":
+        t = Tile()
+        t.filename = filename
+        t._read()
+        return t
+
     def _read(self):
         if self.data is None:
             r = rio.open(self.filename)
             self.data = r.read(1, masked=True).data
             self.profile = r.profile
+            self.nodata = r.profile.data["nodata"]
+            self._apply_filer()  # make my own np.nan instead of the rasterio based one
 
     def write(self, filename):
         if self.profile is None:
@@ -44,13 +54,21 @@ class Tile(BaseModel):
         with rio.open(filename, "w", **self.profile) as dst:
             dst.write(self.data.astype(rio.float32), 1)
 
+    def _apply_filer(self):
+        mask = self.data > 1e4
+        mask |= self.data < -1e4
+        self.data[mask] = np.nan
+
     def subtract(self, t: "Tile"):
         self.data -= t.data
 
     def divide(self, f):
+        assert f != 0.0
+        self.data[self.data == self.nodata] = np.nan
         self.data /= f
 
     def multiply(self, f):
+        self.data[self.data == self.nodata] = np.nan
         self.data *= f
 
     def z_at(self, x: float, y: float) -> Optional[float]:
