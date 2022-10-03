@@ -26,10 +26,11 @@ class AHNCutter:
         ahn_data = self.ahn_data[ahn_version]
 
         # this will only work if a levee is max 2x2 tiles which is a valid assumption (I think... ;-)
-        tile_tl = ahn_data.get_tile_by_xy(left, top)
-        tile_tr = ahn_data.get_tile_by_xy(right, top)
-        tile_bl = ahn_data.get_tile_by_xy(left, bottom)
-        tile_br = ahn_data.get_tile_by_xy(right, bottom)
+        tile_tl = ahn_data.get_tile_by_xy(left, bottom)
+        tile_tr = ahn_data.get_tile_by_xy(right, bottom)
+        tile_bl = ahn_data.get_tile_by_xy(left, top)
+        tile_br = ahn_data.get_tile_by_xy(right, top)
+        xtl, ytl = tile_tl.left, tile_tl.top
 
         # start with the data of the topleft tile
         if tile_tl is None:
@@ -66,13 +67,12 @@ class AHNCutter:
         # now limit the size of the matrix based on the boundaries
         res = tile_tl.resolution
         nodata = tile_tl.nodata
-        xtl, ytl = tile_tl.left, tile_tl.top
 
         # find the index in the matrix
         idx_x1 = int((left - xtl) / res)
-        idx_y1 = data.shape[0] + int((ytl - top) / res)
+        idx_y1 = int((ytl - top) / res)
         idx_x2 = int((right - xtl) / res)
-        idx_y2 = data.shape[0] + int((ytl - bottom) / res)
+        idx_y2 = int((ytl - bottom) / res)
 
         # select the final matrix
         selection = data[idx_y1:idx_y2, idx_x1:idx_x2]
