@@ -12,10 +12,7 @@ from shapely.geometry import LineString
 from .settings import (
     AHN2_DATA,
     AHN3_DATA,
-    AHN4_DATA,
-    AGZ43_DATA,
-    AGZ42_DATA,
-    AGZ32_DATA,
+    AHN4_DATA,    
 )
 from .helpers import case_insensitive_glob, polyline_to_regularly_spaced_polyline
 from .tile import Tile
@@ -25,11 +22,6 @@ class AHNVersion(IntEnum):
     AHN2 = 2
     AHN3 = 3
     AHN4 = 4
-
-    AGZ32 = 32  #  this is the settlement per year as calculated from AHN3 and AHN2
-    AGZ42 = 42  #  this is the settlement per year as calculated from AHN4 and AHN2
-    AGZ43 = 43  # this is the settlement per year as calculated from AHN4 and AHN3
-
 
 class AHN:
     def __init__(self, version: AHNVersion = AHNVersion.AHN4):
@@ -42,13 +34,7 @@ class AHN:
         elif self.version == AHNVersion.AHN3:
             self.path = AHN3_DATA
         elif self.version == AHNVersion.AHN4:
-            self.path = AHN4_DATA
-        elif self.version == AHNVersion.AGZ43:
-            self.path = AGZ43_DATA
-        elif self.version == AHNVersion.AGZ42:
-            self.path = AGZ42_DATA
-        elif self.version == AHNVersion.AGZ32:
-            self.path = AGZ32_DATA
+            self.path = AHN4_DATA        
         else:
             raise ValueError(f"Invalid AHNVersion {version}")
 

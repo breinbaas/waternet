@@ -12,3 +12,11 @@ RIGHT = 50      # het aantal meters dat het dwarsprofiel richting de polder moet
 ```
 
 Run het script via ```python main.py```
+
+Je krijgt nu in het uitvoerpad de volgende bestanden / paden;
+
+- DIJKTRAJECTCODE
+    - 2d; dit zijn de x,y punten van een 2d representatie van het profiel, geschikt om in DStab te kopieren
+    - 3d; dit zijn bestanden met de complete dwarsprofiel informatie, l van referentielijn, x, y, z coordinaten
+    - plots; plotjes van de dwarsprofielen
+    - een shape bestand met de locatie van de dwarsprofielen voor QGis / ArcGIS

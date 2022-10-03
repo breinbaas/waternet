@@ -12,6 +12,7 @@ Voor de connectie naar de data zijn de instellingen in ```shared/settings.py``` 
 
 Voorbeeld settings bestand;
 
+
 ```python 
 # locatie van de AHN raster bestanden
 AHN2_DATA = "/home/breinbaas/Documents/ahn2"
