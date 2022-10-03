@@ -22,3 +22,5 @@ LEVEES_SHAPE = "/home/breinbaas/Documents/shapefiles/dijktrajecten.shp"
 # pad naar uitvoer
 # dwarsprofielen uitvoer
 CROSSSECTION_OUTPUT_DIR = "/home/breinbaas/Documents/dwarsprofielen"
+# hoogtetoets uitvoer
+HEIGHT_ASSESSMENT_OUTPUT_DIR = "/home/breinbaas/Documents/hoogtetoets"

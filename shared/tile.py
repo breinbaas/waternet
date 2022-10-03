@@ -62,6 +62,9 @@ class Tile(BaseModel):
     def subtract(self, t: "Tile"):
         self.data -= t.data
 
+    def add(self, t: "Tile"):
+        self.data += t.data
+
     def divide(self, f):
         assert f != 0.0
         self.data[self.data == self.nodata] = np.nan
@@ -70,6 +73,16 @@ class Tile(BaseModel):
     def multiply(self, f):
         self.data[self.data == self.nodata] = np.nan
         self.data *= f
+
+    def limits(self, lower_limit, upper_limit):
+        self.upper_limit(upper_limit)
+        self.lower_limit(lower_limit)
+
+    def upper_limit(self, f):
+        self.data[self.data > f] = f
+
+    def lower_limit(self, f):
+        self.data[self.data < f] = f
 
     def z_at(self, x: float, y: float) -> Optional[float]:
         self._read()

@@ -26,3 +26,19 @@ def test_subtract():
     t2 = Tile.from_filename("tests/testdata/small_area.tif")
     t1.subtract(t2)
     assert t1.data[0][0] == pytest.approx(0.0, 0.001)
+
+
+def test_upper_limit():
+    t = Tile.from_filename("tests/testdata/small_area.tif")
+    num_nans = np.count_nonzero(np.isnan(t.data))
+    t.upper_limit(-9.99)
+    assert t.data[0][0] == pytest.approx(-9.99)
+    assert np.count_nonzero(np.isnan(t.data)) == num_nans
+
+
+def test_lower_limit():
+    t = Tile.from_filename("tests/testdata/small_area.tif")
+    num_nans = np.count_nonzero(np.isnan(t.data))
+    t.lower_limit(9.99)
+    assert t.data[0][0] == pytest.approx(9.99)
+    assert np.count_nonzero(np.isnan(t.data)) == num_nans
