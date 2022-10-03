@@ -31,11 +31,12 @@ class Tile(BaseModel):
                 "driver": "GTiff",
                 "dtype": "float32",
                 "nodata": -3.4028234663852886e38,
-                "width": int(self.right - self.left),
-                "height": int(self.top - self.bottom),
+                "width": self.ncols,
+                "height": self.nrows,
+                # "resolution": self.resolution,
                 "count": 1,
                 "crs": CRS.from_epsg(28992),
-                "transform": Affine(1.0, 0.0, self.left, 0.0, -1.0, self.top),
+                "transform": Affine(0.5, 0.0, self.left, 0.0, -0.5, self.top),
                 "tiled": False,
                 "interleave": "band",
             }
@@ -68,4 +69,4 @@ class Tile(BaseModel):
         z = self.data[idy, idx]
         if z == self.nodata:
             return None
-        return z
+        return float(z)

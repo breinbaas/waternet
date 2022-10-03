@@ -5,6 +5,8 @@ __pycache__/
 
 _old/
 
+testdata/output/
+
 # C extensions
 *.so
 
