@@ -31,16 +31,6 @@ VALID_POINTS_AHN4 = [
     (124841.75, 487500.01, 2.3224),
 ]
 
-VALID_POINTS_AGZ43 = [
-    (140799.76, 459271.77, -0.0159),
-    (116405.44, 465295.57, -0.0155),
-    (115390.74, 477538.21, -0.0040),
-]
-
-VALID_POINTS_AGZ42 = [(131023.81, 466981.31, -0.0336)]
-
-VALID_POINTS_AGZ32 = [(131023.81, 466981.31, -0.0435)]
-
 
 def test_setup_ahn2():
     ahn = AHN(version=AHNVersion.AHN2)
@@ -54,21 +44,6 @@ def test_setup_ahn3():
 
 def test_setup_ahn4():
     ahn = AHN(version=AHNVersion.AHN4)
-    assert (ahn) is not None
-
-
-def test_setup_agz42():
-    ahn = AHN(version=AHNVersion.AGZ42)
-    assert (ahn) is not None
-
-
-def test_setup_agz43():
-    ahn = AHN(version=AHNVersion.AGZ43)
-    assert (ahn) is not None
-
-
-def test_setup_agz32():
-    ahn = AHN(version=AHNVersion.AGZ32)
     assert (ahn) is not None
 
 
@@ -94,27 +69,6 @@ def test_ahn3_get_z():
 def test_ahn4_get_z():
     ahn = AHN(version=AHNVersion.AHN4)
     for p in VALID_POINTS_AHN4:
-        z = ahn.z_at(p[0], p[1])
-        assert round(ahn.z_at(p[0], p[1]), 4) == p[2]
-
-
-def test_d_ahn43_get_z():
-    ahn = AHN(version=AHNVersion.AGZ43)
-    for p in VALID_POINTS_AGZ43:
-        z = ahn.z_at(p[0], p[1])
-        assert round(ahn.z_at(p[0], p[1]), 4) == p[2]
-
-
-def test_d_ahn42_get_z():
-    ahn = AHN(version=AHNVersion.AGZ42)
-    for p in VALID_POINTS_AGZ42:
-        z = ahn.z_at(p[0], p[1])
-        assert round(ahn.z_at(p[0], p[1]), 4) == p[2]
-
-
-def test_d_ahn32_get_z():
-    ahn = AHN(version=AHNVersion.AGZ32)
-    for p in VALID_POINTS_AGZ32:
         z = ahn.z_at(p[0], p[1])
         assert round(ahn.z_at(p[0], p[1]), 4) == p[2]
 
