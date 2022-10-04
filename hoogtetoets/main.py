@@ -1,6 +1,8 @@
+from copy import deepcopy
 from tqdm import tqdm
 import numpy as np
 from pathlib import Path
+import shapefile
 
 from shared.levees import LeveeSections
 from shared.ahncutter import AHNCutter
@@ -11,8 +13,8 @@ from shared.settings import (
     AHN2_YEAR,
     HEIGHT_ASSESSMENT_OUTPUT_DIR,
 )
+from shared.helpers import polyline_to_regularly_spaced_polyline
 
-from copy import deepcopy
 
 ZICHTJAAR = 2024
 
@@ -64,8 +66,33 @@ for ls in tqdm(LeveeSections().items):
     m.add(agz)
     # dit is het rasterbestand met de hoogte voor het zichtjaar
     m.write(Path(HEIGHT_ASSESSMENT_OUTPUT_DIR) / f"{ls.dtcode}.tif")
+
     # nagaan over 1.5m breedte
+    pts = ls.regulary_spaced_referenceline(interval=10)
+
+    # write as a shapefile
+    w = shapefile.Writer(
+        str(
+            Path(HEIGHT_ASSESSMENT_OUTPUT_DIR)
+            # / f"{ls.dtcode}"
+            / f"{ls.dtcode}.{ZICHTJAAR}.strikt.resultaat.shp"
+        )
+    )
+    w.field("voldoet", "C", "40")
+
+    for p in pts:
+        xl, yl, xr, yr = ls.perpendicular_line(p[0], left=0, right=1.5)
+        crspoints = polyline_to_regularly_spaced_polyline(
+            [(xl, yl), (xr, yr)], interval=0.5
+        )
+        assessment_data = [(p[0], p[1], p[2], m.z_at(p[1], p[2])) for p in crspoints]
+        voldoet = len([p for p in assessment_data if p[3] < ls.dth]) == 0
+        w.point(p[1], p[2])
+
+        if voldoet:
+            w.record("ja")
+        else:
+            w.record("nee")
 
     # nagaan over de opgegeven breedte
-
-    break
+    # TODO
