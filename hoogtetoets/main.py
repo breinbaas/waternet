@@ -17,6 +17,8 @@ from shared.helpers import polyline_to_regularly_spaced_polyline
 
 
 ZICHTJAAR = 2024
+KERNZONE_WATER = 10
+KERNZONE_POLDER = 25
 
 # per dijktraject deel
 for ls in tqdm(LeveeSections().items):
@@ -71,14 +73,22 @@ for ls in tqdm(LeveeSections().items):
     pts = ls.regulary_spaced_referenceline(interval=10)
 
     # write as a shapefile
-    w = shapefile.Writer(
+    w_strict = shapefile.Writer(
         str(
             Path(HEIGHT_ASSESSMENT_OUTPUT_DIR)
             # / f"{ls.dtcode}"
             / f"{ls.dtcode}.{ZICHTJAAR}.strikt.resultaat.shp"
         )
     )
-    w.field("voldoet", "C", "40")
+    w_kernzone = shapefile.Writer(
+        str(
+            Path(HEIGHT_ASSESSMENT_OUTPUT_DIR)
+            # / f"{ls.dtcode}"
+            / f"{ls.dtcode}.{ZICHTJAAR}.kernzone.resultaat.shp"
+        )
+    )
+    w_strict.field("voldoet", "C", "40")
+    w_kernzone.field("voldoet", "C", "40")
 
     for p in pts:
         xl, yl, xr, yr = ls.perpendicular_line(p[0], left=0, right=1.5)
@@ -87,12 +97,33 @@ for ls in tqdm(LeveeSections().items):
         )
         assessment_data = [(p[0], p[1], p[2], m.z_at(p[1], p[2])) for p in crspoints]
         voldoet = len([p for p in assessment_data if p[3] < ls.dth]) == 0
-        w.point(p[1], p[2])
+        w_strict.point(p[1], p[2])
 
         if voldoet:
-            w.record("ja")
+            w_strict.record("ja")
         else:
-            w.record("nee")
+            w_strict.record("nee")
 
-    # nagaan over de opgegeven breedte
-    # TODO
+        xl, yl, xr, yr = ls.perpendicular_line(
+            p[0], left=KERNZONE_WATER, right=KERNZONE_POLDER
+        )
+        crspoints = polyline_to_regularly_spaced_polyline(
+            [(xl, yl), (xr, yr)], interval=0.5
+        )
+        assessment_data = np.array(
+            [(p[0], p[1], p[2], m.z_at(p[1], p[2])) for p in crspoints]
+        )
+        diff = np.diff(
+            np.where(
+                np.concatenate(
+                    (
+                        [assessment_data[0]],
+                        assessment_data[:-1] != assessment_data[1:],
+                        [True],
+                    )
+                )
+            )[0]
+        )[::2]
+        i = 1
+
+        # nagaan over de gehele breedte
