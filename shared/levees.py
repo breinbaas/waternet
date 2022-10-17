@@ -25,6 +25,12 @@ class LeveeBase(BaseModel):
             result.append(self.cxya_at_c(l))
         return result
 
+    def coordinates_to_csv(self, filename: str) -> None:
+        f = open(filename, "w")
+        for p in self.points:
+            f.write(f"{p[1]},{p[2]}\n")
+        f.close()
+
     def perpendicular_points(self, c: float, left: float, right: float, interval=0.5):
         p = self.cxya_at_c(c)
         if p[0] < 0.0:

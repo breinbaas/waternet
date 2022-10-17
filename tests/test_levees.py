@@ -62,3 +62,8 @@ def test_perpendicular_line():
 def test_perpendicular_points():
     levee = Levees().get_from_code("A117")
     assert len(levee.perpendicular_points(c=100, left=1, right=1)) == 5
+
+
+def test_levee_coordinates_to_csv():
+    levee = Levees().get_from_code("A2029")
+    levee.coordinates_to_csv("tests/testdata/output/A2029.coordinates.csv")
