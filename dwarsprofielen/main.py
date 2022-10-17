@@ -13,7 +13,7 @@ from shared.settings import CROSSSECTION_OUTPUT_DIR
 plt.rcParams["figure.figsize"] = (15, 5)
 
 
-DTCODE = "V344"  # dit is de dijktraject code
+DTCODE = "A2029"  # dit is de dijktraject code
 HOH = 100  # dit is de gewenste hart op hart afstand
 LEFT = 20  # het aantal meters dat het dwarsprofiel richting de boezem moet lopen
 RIGHT = 50  # het aantal meters dat het dwarsprofiel richting de polder moet lopen
@@ -31,9 +31,10 @@ if __name__ == "__main__":
             f"Could not find dtcode '{DTCODE}', check the code or the shapefile."
         )
 
-    pts = levee.regulary_spaced_referenceline(interval=10)
+    pts = levee.regulary_spaced_referenceline(interval=HOH)
 
     shapepoints = []
+    lines_merged = []
     for p in tqdm(pts):
         xl, yl, xr, yr = levee.perpendicular_line(p[0], left=LEFT, right=RIGHT + 0.1)
         crspoints = polyline_to_regularly_spaced_polyline(
@@ -97,6 +98,7 @@ if __name__ == "__main__":
             )
         crosssection.clean()
         crosssection.to_csv(CROSSSECTION_OUTPUT_DIR)
+        lines_merged.append(crosssection.to_one_line())
         plt.plot(
             [p.c for p in crosssection.points],
             [p.z for p in crosssection.points],
@@ -123,3 +125,11 @@ if __name__ == "__main__":
     for p in shapepoints:
         w.line([[[p[0], p[1]], [p[2], p[3]]]])
         w.record(f"{int(p[4]):05d}")
+
+    f = open(
+        str(Path(CROSSSECTION_OUTPUT_DIR) / f"{DTCODE}" / f"{DTCODE}.all.csv"), "w"
+    )
+    for line in lines_merged:
+        if not "nan" in line:
+            f.write(f"{line}\n")
+    f.close()
