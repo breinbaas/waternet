@@ -15,7 +15,7 @@ class CrosssectionPoint(BaseModel):
     z: Optional[float]
 
     def to_string(self) -> str:
-        return f"{self.c},{self.x},{self.y},{self.z}"
+        return f"{self.c},{self.x},{self.y},{round(self.z,2)}"
 
 
 class Crosssection(BaseModel):
