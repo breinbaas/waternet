@@ -9,9 +9,13 @@ from .settings import LEVEESECTIONS_SHAPE, LEVEES_SHAPE
 
 class LeveeBase(BaseModel):
     dtcode: str = ""
-    points: List[
-        Tuple[float, float, float]
-    ] = []  # list of [chainage, x, y, angle] points
+    points: List[Tuple[float, float, float]] = []  # list of [chainage, x, y]
+    rpoints: List[
+        Tuple[float, float, float, float]
+    ] = []  # list of [chainage, x, y, angle] but with a fixed distance of 1m
+
+    def generate_rpoints(self):
+        self.rpoints = self.regulary_spaced_referenceline(interval=1.0)
 
     def regulary_spaced_referenceline(
         self, interval: float = 5.0
@@ -107,6 +111,29 @@ class LeveeBase(BaseModel):
             floor(min(ys) - offset),
         )
 
+    def closest_referenceline_point_to(
+        self, x: float, y: float
+    ) -> Tuple[float, float, float]:
+        """Get the closest point of the referenceline to the given point
+
+        Args:
+            x (float): x coordinate of the point to look for
+            y (float): y coordinate of the point to look for
+
+        Returns:
+            Tuple[float, float, float]: Tuple with the x,y of the closest point and the distance from the point to the point on the referenceline
+        """
+        if len(self.rpoints) == 0:
+            self.generate_rpoints()
+
+        result = -1.0
+        for p in self.rpoints:
+            dl = hypot(p[1] - x, p[2] - y)
+            if result == -1 or dl < result:
+                result = dl
+
+        return result
+
 
 class Levee(LeveeBase):
     ...
@@ -138,12 +165,11 @@ class Levees:
                     dl += hypot(points[i - 1][1] - p[0], points[i - 1][2] - p[1])
                 points.append((round(dl, 2), round(p[0], 2), round(p[1], 2)))
 
-            self.items.append(
-                Levee(
-                    dtcode=sr.record["code"],
-                    points=points,
-                )
+            levee = Levee(
+                dtcode=sr.record["DWKIDENT"],
+                points=points,
             )
+            self.items.append(levee)
 
     def get_from_code(self, code: str) -> List[Levee]:
         for dt in self.items:

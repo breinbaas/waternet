@@ -8,7 +8,7 @@ def test_get_waternet_leveesections():
 
 def test_get_waternet_levees():
     levees = Levees()
-    assert len(levees.items) == 272
+    assert len(levees.items) == 278
 
 
 def test_get_levee_from_code():

@@ -1,0 +1,1979 @@
+Input file for D-Geo Stability : Stability of earth slopes.
+==============================================================================
+COMPANY    :    
+
+DATE       : 22-12-2021
+TIME       : 10:11:15
+FILENAME   : T:\TOP\Projecten OA\11 Geotechniek\00 DVB\01.0292-001 Diemen Noord\400 Voorbereiding\Berekeningen\Ontgrondingsberekening\A124_0380_STBI boom_Bishop.sti
+CREATED BY : D-Geo Stability version 18.2.2.32619
+==========================    BEGINNING OF DATA     ==========================
+[VERSION]
+Soil=1008
+Geometry=1001
+StressCurve=1000
+BondStressDiagram=1000
+YieldStress=1001
+D-Geo Stability=1009
+[END OF VERSION]
+
+[SOIL COLLECTION]
+   12 = number of items
+[SOIL]
+klei-1 (10,8 - 13,5)
+SoilColor=9276906
+SoilSoilType=2
+SoilUseSoilType=0
+SoilGamDry=12.50
+SoilGamWet=12.50
+SoilRestSlope=1
+SoilCohesion=3.84
+SoilPhi=25.14
+SoilDilatancy=25.14
+SoilCuTop=0.00
+SoilCuBottom=0.00
+SoilCuGradient=0.00
+SoilStressTableName=
+SoilBondStressTableName=
+SoilMatStrengthType=0
+SoilProbInputValues=0
+SoilRatioCuPc=0.22
+SoilStrengthIncreaseExponent=0.80
+SoilPOPTop=0.00
+SoilPOPBottom=0.00
+SoilAdditionalFactorLEM=1.00
+SoilPc=0.00E+00
+SoilPOP=0.00
+SoilRheologicalCoefficient=0.00
+SoilXCoorSoilPc=-100.000
+SoilYCoorSoilPc=-100.000
+SoilIsPopCalculated=0
+SoilIsOCRCalculated=0
+SoilIsAquifer=0
+SoilUseProbDefaults=1
+SoilStdCohesion=0.00
+SoilStdPhi=0.00
+SoilStdRatioCuPc=0.00
+SoilStdRatioCuPcPassive=0.00
+SoilStdRatioCuPcActive=0.00
+SoilStdCu=0.00
+SoilStdCuTop=0.00
+SoilStdCuGradient=0.00
+SoilStdPn=0.20
+SoilDistCohesion=3
+SoilDistPhi=3
+SoilDistStressTable=3
+SoilDistRatioCuPc=3
+SoilDistRatioCuPcPassive=3
+SoilDistRatioCuPcActive=3
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+SoilDistPn=3
+SoilCorrelationCPhi=0.00
+SoilRatioCuPcPassive=0.00
+SoilRatioCuPcActive=0.00
+SoilCuPassiveTop=0.00
+SoilCuPassiveBottom=0.00
+SoilCuActiveTop=0.00
+SoilCuActiveBottom=0.00
+SoilUniformRatioCuPc=1
+SoilUniformCu=1
+SoilDesignPartialCohesion=1.25
+SoilDesignStdCohesion=-1.65
+SoilDesignPartialPhi=1.10
+SoilDesignStdPhi=-1.65
+SoilDesignPartialStressTable=1.15
+SoilDesignStdStressTable=-1.65
+SoilDesignPartialRatioCuPc=1.15
+SoilDesignStdRatioCuPc=-1.65
+SoilDesignPartialCu=1.15
+SoilDesignStdCu=-1.65
+SoilDesignPartialPOP=1.10
+SoilDesignStdPOP=-1.65
+SoilDesignPartialRRatio=1.00
+SoilDesignStdRRatio=0.00
+SoilSoilGroup=0
+SoilStdPOP=0.00
+SoilDistPOP=2
+SoilHorFluctScaleCoh=50.00
+SoilVertFluctScaleCoh=0.25
+SoilNumberOfTestsCoh=1
+SoilVarianceRatioCoh=0.75
+SoilHorFluctScalePhi=50.00
+SoilVertFluctScalePhi=0.25
+SoilNumberOfTestsPhi=1
+SoilVarianceRatioPhi=0.75
+SoilRRatio=1.0000000
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+[END OF SOIL]
+[SOIL]
+klei-2  (13,5 - 15,0)
+SoilColor=12171263
+SoilSoilType=2
+SoilUseSoilType=0
+SoilGamDry=14.50
+SoilGamWet=14.50
+SoilRestSlope=1
+SoilCohesion=4.20
+SoilPhi=25.38
+SoilDilatancy=25.38
+SoilCuTop=0.00
+SoilCuBottom=0.00
+SoilCuGradient=0.00
+SoilStressTableName=
+SoilBondStressTableName=
+SoilMatStrengthType=0
+SoilProbInputValues=0
+SoilRatioCuPc=0.22
+SoilStrengthIncreaseExponent=0.80
+SoilPOPTop=0.00
+SoilPOPBottom=0.00
+SoilAdditionalFactorLEM=1.00
+SoilPc=0.00E+00
+SoilPOP=0.00
+SoilRheologicalCoefficient=0.00
+SoilXCoorSoilPc=-100.000
+SoilYCoorSoilPc=-100.000
+SoilIsPopCalculated=0
+SoilIsOCRCalculated=0
+SoilIsAquifer=0
+SoilUseProbDefaults=1
+SoilStdCohesion=0.00
+SoilStdPhi=0.00
+SoilStdRatioCuPc=0.00
+SoilStdRatioCuPcPassive=0.00
+SoilStdRatioCuPcActive=0.00
+SoilStdCu=0.00
+SoilStdCuTop=0.00
+SoilStdCuGradient=0.00
+SoilStdPn=0.20
+SoilDistCohesion=3
+SoilDistPhi=3
+SoilDistStressTable=3
+SoilDistRatioCuPc=3
+SoilDistRatioCuPcPassive=3
+SoilDistRatioCuPcActive=3
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+SoilDistPn=3
+SoilCorrelationCPhi=0.00
+SoilRatioCuPcPassive=0.00
+SoilRatioCuPcActive=0.00
+SoilCuPassiveTop=0.00
+SoilCuPassiveBottom=0.00
+SoilCuActiveTop=0.00
+SoilCuActiveBottom=0.00
+SoilUniformRatioCuPc=1
+SoilUniformCu=1
+SoilDesignPartialCohesion=1.25
+SoilDesignStdCohesion=-1.65
+SoilDesignPartialPhi=1.10
+SoilDesignStdPhi=-1.65
+SoilDesignPartialStressTable=1.15
+SoilDesignStdStressTable=-1.65
+SoilDesignPartialRatioCuPc=1.15
+SoilDesignStdRatioCuPc=-1.65
+SoilDesignPartialCu=1.15
+SoilDesignStdCu=-1.65
+SoilDesignPartialPOP=1.10
+SoilDesignStdPOP=-1.65
+SoilDesignPartialRRatio=1.00
+SoilDesignStdRRatio=0.00
+SoilSoilGroup=0
+SoilStdPOP=0.00
+SoilDistPOP=2
+SoilHorFluctScaleCoh=50.00
+SoilVertFluctScaleCoh=0.25
+SoilNumberOfTestsCoh=1
+SoilVarianceRatioCoh=0.75
+SoilHorFluctScalePhi=50.00
+SoilVertFluctScalePhi=0.25
+SoilNumberOfTestsPhi=1
+SoilVarianceRatioPhi=0.75
+SoilRRatio=1.0000000
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+[END OF SOIL]
+[SOIL]
+klei-2  (13,5 - 15,0)-2
+SoilColor=9946300
+SoilSoilType=2
+SoilUseSoilType=0
+SoilGamDry=13.50
+SoilGamWet=13.50
+SoilRestSlope=1
+SoilCohesion=4.20
+SoilPhi=25.38
+SoilDilatancy=25.38
+SoilCuTop=0.00
+SoilCuBottom=0.00
+SoilCuGradient=0.00
+SoilStressTableName=
+SoilBondStressTableName=
+SoilMatStrengthType=0
+SoilProbInputValues=0
+SoilRatioCuPc=0.22
+SoilStrengthIncreaseExponent=0.80
+SoilPOPTop=0.00
+SoilPOPBottom=0.00
+SoilAdditionalFactorLEM=1.00
+SoilPc=0.00E+00
+SoilPOP=0.00
+SoilRheologicalCoefficient=0.00
+SoilXCoorSoilPc=-100.000
+SoilYCoorSoilPc=-100.000
+SoilIsPopCalculated=0
+SoilIsOCRCalculated=0
+SoilIsAquifer=0
+SoilUseProbDefaults=1
+SoilStdCohesion=0.00
+SoilStdPhi=0.00
+SoilStdRatioCuPc=0.00
+SoilStdRatioCuPcPassive=0.00
+SoilStdRatioCuPcActive=0.00
+SoilStdCu=0.00
+SoilStdCuTop=0.00
+SoilStdCuGradient=0.00
+SoilStdPn=0.20
+SoilDistCohesion=3
+SoilDistPhi=3
+SoilDistStressTable=3
+SoilDistRatioCuPc=3
+SoilDistRatioCuPcPassive=3
+SoilDistRatioCuPcActive=3
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+SoilDistPn=3
+SoilCorrelationCPhi=0.00
+SoilRatioCuPcPassive=0.00
+SoilRatioCuPcActive=0.00
+SoilCuPassiveTop=0.00
+SoilCuPassiveBottom=0.00
+SoilCuActiveTop=0.00
+SoilCuActiveBottom=0.00
+SoilUniformRatioCuPc=1
+SoilUniformCu=1
+SoilDesignPartialCohesion=1.25
+SoilDesignStdCohesion=-1.65
+SoilDesignPartialPhi=1.10
+SoilDesignStdPhi=-1.65
+SoilDesignPartialStressTable=1.15
+SoilDesignStdStressTable=-1.65
+SoilDesignPartialRatioCuPc=1.15
+SoilDesignStdRatioCuPc=-1.65
+SoilDesignPartialCu=1.15
+SoilDesignStdCu=-1.65
+SoilDesignPartialPOP=1.10
+SoilDesignStdPOP=-1.65
+SoilDesignPartialRRatio=1.00
+SoilDesignStdRRatio=0.00
+SoilSoilGroup=0
+SoilStdPOP=0.00
+SoilDistPOP=2
+SoilHorFluctScaleCoh=50.00
+SoilVertFluctScaleCoh=0.25
+SoilNumberOfTestsCoh=1
+SoilVarianceRatioCoh=0.75
+SoilHorFluctScalePhi=50.00
+SoilVertFluctScalePhi=0.25
+SoilNumberOfTestsPhi=1
+SoilVarianceRatioPhi=0.75
+SoilRRatio=1.0000000
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+[END OF SOIL]
+[SOIL]
+klei-3  (15,0 - 17,0)
+SoilColor=16777215
+SoilSoilType=2
+SoilUseSoilType=0
+SoilGamDry=16.00
+SoilGamWet=16.00
+SoilRestSlope=1
+SoilCohesion=3.33
+SoilPhi=26.78
+SoilDilatancy=26.78
+SoilCuTop=0.00
+SoilCuBottom=0.00
+SoilCuGradient=0.00
+SoilStressTableName=
+SoilBondStressTableName=
+SoilMatStrengthType=0
+SoilProbInputValues=0
+SoilRatioCuPc=0.22
+SoilStrengthIncreaseExponent=0.80
+SoilPOPTop=0.00
+SoilPOPBottom=0.00
+SoilAdditionalFactorLEM=1.00
+SoilPc=0.00E+00
+SoilPOP=0.00
+SoilRheologicalCoefficient=0.00
+SoilXCoorSoilPc=-100.000
+SoilYCoorSoilPc=-100.000
+SoilIsPopCalculated=0
+SoilIsOCRCalculated=0
+SoilIsAquifer=0
+SoilUseProbDefaults=1
+SoilStdCohesion=0.00
+SoilStdPhi=0.00
+SoilStdRatioCuPc=0.00
+SoilStdRatioCuPcPassive=0.00
+SoilStdRatioCuPcActive=0.00
+SoilStdCu=0.00
+SoilStdCuTop=0.00
+SoilStdCuGradient=0.00
+SoilStdPn=0.20
+SoilDistCohesion=3
+SoilDistPhi=3
+SoilDistStressTable=3
+SoilDistRatioCuPc=3
+SoilDistRatioCuPcPassive=3
+SoilDistRatioCuPcActive=3
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+SoilDistPn=3
+SoilCorrelationCPhi=0.00
+SoilRatioCuPcPassive=0.00
+SoilRatioCuPcActive=0.00
+SoilCuPassiveTop=0.00
+SoilCuPassiveBottom=0.00
+SoilCuActiveTop=0.00
+SoilCuActiveBottom=0.00
+SoilUniformRatioCuPc=1
+SoilUniformCu=1
+SoilDesignPartialCohesion=1.25
+SoilDesignStdCohesion=-1.65
+SoilDesignPartialPhi=1.10
+SoilDesignStdPhi=-1.65
+SoilDesignPartialStressTable=1.15
+SoilDesignStdStressTable=-1.65
+SoilDesignPartialRatioCuPc=1.15
+SoilDesignStdRatioCuPc=-1.65
+SoilDesignPartialCu=1.15
+SoilDesignStdCu=-1.65
+SoilDesignPartialPOP=1.10
+SoilDesignStdPOP=-1.65
+SoilDesignPartialRRatio=1.00
+SoilDesignStdRRatio=0.00
+SoilSoilGroup=0
+SoilStdPOP=0.00
+SoilDistPOP=2
+SoilHorFluctScaleCoh=50.00
+SoilVertFluctScaleCoh=0.25
+SoilNumberOfTestsCoh=1
+SoilVarianceRatioCoh=0.75
+SoilHorFluctScalePhi=50.00
+SoilVertFluctScalePhi=0.25
+SoilNumberOfTestsPhi=1
+SoilVarianceRatioPhi=0.75
+SoilRRatio=1.0000000
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+[END OF SOIL]
+[SOIL]
+klei-4 (>17,0)
+SoilColor=9211020
+SoilSoilType=2
+SoilUseSoilType=0
+SoilGamDry=17.00
+SoilGamWet=17.00
+SoilRestSlope=1
+SoilCohesion=0.09
+SoilPhi=31.83
+SoilDilatancy=31.83
+SoilCuTop=0.00
+SoilCuBottom=0.00
+SoilCuGradient=0.00
+SoilStressTableName=
+SoilBondStressTableName=
+SoilMatStrengthType=0
+SoilProbInputValues=0
+SoilRatioCuPc=0.22
+SoilStrengthIncreaseExponent=0.80
+SoilPOPTop=0.00
+SoilPOPBottom=0.00
+SoilAdditionalFactorLEM=1.00
+SoilPc=0.00E+00
+SoilPOP=0.00
+SoilRheologicalCoefficient=0.00
+SoilXCoorSoilPc=-100.000
+SoilYCoorSoilPc=-100.000
+SoilIsPopCalculated=0
+SoilIsOCRCalculated=0
+SoilIsAquifer=0
+SoilUseProbDefaults=1
+SoilStdCohesion=0.00
+SoilStdPhi=0.00
+SoilStdRatioCuPc=0.00
+SoilStdRatioCuPcPassive=0.00
+SoilStdRatioCuPcActive=0.00
+SoilStdCu=0.00
+SoilStdCuTop=0.00
+SoilStdCuGradient=0.00
+SoilStdPn=0.20
+SoilDistCohesion=3
+SoilDistPhi=3
+SoilDistStressTable=3
+SoilDistRatioCuPc=3
+SoilDistRatioCuPcPassive=3
+SoilDistRatioCuPcActive=3
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+SoilDistPn=3
+SoilCorrelationCPhi=0.00
+SoilRatioCuPcPassive=0.00
+SoilRatioCuPcActive=0.00
+SoilCuPassiveTop=0.00
+SoilCuPassiveBottom=0.00
+SoilCuActiveTop=0.00
+SoilCuActiveBottom=0.00
+SoilUniformRatioCuPc=1
+SoilUniformCu=1
+SoilDesignPartialCohesion=1.25
+SoilDesignStdCohesion=-1.65
+SoilDesignPartialPhi=1.10
+SoilDesignStdPhi=-1.65
+SoilDesignPartialStressTable=1.15
+SoilDesignStdStressTable=-1.65
+SoilDesignPartialRatioCuPc=1.15
+SoilDesignStdRatioCuPc=-1.65
+SoilDesignPartialCu=1.15
+SoilDesignStdCu=-1.65
+SoilDesignPartialPOP=1.10
+SoilDesignStdPOP=-1.65
+SoilDesignPartialRRatio=1.00
+SoilDesignStdRRatio=0.00
+SoilSoilGroup=0
+SoilStdPOP=0.00
+SoilDistPOP=2
+SoilHorFluctScaleCoh=50.00
+SoilVertFluctScaleCoh=0.25
+SoilNumberOfTestsCoh=1
+SoilVarianceRatioCoh=0.75
+SoilHorFluctScalePhi=50.00
+SoilVertFluctScalePhi=0.25
+SoilNumberOfTestsPhi=1
+SoilVarianceRatioPhi=0.75
+SoilRRatio=1.0000000
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+[END OF SOIL]
+[SOIL]
+hollandveen
+SoilColor=10944420
+SoilSoilType=2
+SoilUseSoilType=0
+SoilGamDry=10.20
+SoilGamWet=10.20
+SoilRestSlope=1
+SoilCohesion=1.44
+SoilPhi=26.11
+SoilDilatancy=26.11
+SoilCuTop=0.00
+SoilCuBottom=0.00
+SoilCuGradient=0.00
+SoilStressTableName=
+SoilBondStressTableName=
+SoilMatStrengthType=0
+SoilProbInputValues=0
+SoilRatioCuPc=0.22
+SoilStrengthIncreaseExponent=0.80
+SoilPOPTop=0.00
+SoilPOPBottom=0.00
+SoilAdditionalFactorLEM=1.00
+SoilPc=0.00E+00
+SoilPOP=0.00
+SoilRheologicalCoefficient=0.00
+SoilXCoorSoilPc=-100.000
+SoilYCoorSoilPc=-100.000
+SoilIsPopCalculated=0
+SoilIsOCRCalculated=0
+SoilIsAquifer=0
+SoilUseProbDefaults=1
+SoilStdCohesion=0.00
+SoilStdPhi=0.00
+SoilStdRatioCuPc=0.00
+SoilStdRatioCuPcPassive=0.00
+SoilStdRatioCuPcActive=0.00
+SoilStdCu=0.00
+SoilStdCuTop=0.00
+SoilStdCuGradient=0.00
+SoilStdPn=0.20
+SoilDistCohesion=3
+SoilDistPhi=3
+SoilDistStressTable=3
+SoilDistRatioCuPc=3
+SoilDistRatioCuPcPassive=3
+SoilDistRatioCuPcActive=3
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+SoilDistPn=3
+SoilCorrelationCPhi=0.00
+SoilRatioCuPcPassive=0.00
+SoilRatioCuPcActive=0.00
+SoilCuPassiveTop=0.00
+SoilCuPassiveBottom=0.00
+SoilCuActiveTop=0.00
+SoilCuActiveBottom=0.00
+SoilUniformRatioCuPc=1
+SoilUniformCu=1
+SoilDesignPartialCohesion=1.25
+SoilDesignStdCohesion=-1.65
+SoilDesignPartialPhi=1.10
+SoilDesignStdPhi=-1.65
+SoilDesignPartialStressTable=1.15
+SoilDesignStdStressTable=-1.65
+SoilDesignPartialRatioCuPc=1.15
+SoilDesignStdRatioCuPc=-1.65
+SoilDesignPartialCu=1.15
+SoilDesignStdCu=-1.65
+SoilDesignPartialPOP=1.10
+SoilDesignStdPOP=-1.65
+SoilDesignPartialRRatio=1.00
+SoilDesignStdRRatio=0.00
+SoilSoilGroup=0
+SoilStdPOP=0.00
+SoilDistPOP=2
+SoilHorFluctScaleCoh=50.00
+SoilVertFluctScaleCoh=0.25
+SoilNumberOfTestsCoh=1
+SoilVarianceRatioCoh=0.75
+SoilHorFluctScalePhi=50.00
+SoilVertFluctScalePhi=0.25
+SoilNumberOfTestsPhi=1
+SoilVarianceRatioPhi=0.75
+SoilRRatio=1.0000000
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+[END OF SOIL]
+[SOIL]
+basisveen
+SoilColor=9094655
+SoilSoilType=2
+SoilUseSoilType=0
+SoilGamDry=11.00
+SoilGamWet=11.00
+SoilRestSlope=1
+SoilCohesion=1.44
+SoilPhi=26.11
+SoilDilatancy=26.11
+SoilCuTop=0.00
+SoilCuBottom=0.00
+SoilCuGradient=0.00
+SoilStressTableName=
+SoilBondStressTableName=
+SoilMatStrengthType=0
+SoilProbInputValues=0
+SoilRatioCuPc=0.22
+SoilStrengthIncreaseExponent=0.80
+SoilPOPTop=0.00
+SoilPOPBottom=0.00
+SoilAdditionalFactorLEM=1.00
+SoilPc=0.00E+00
+SoilPOP=0.00
+SoilRheologicalCoefficient=0.00
+SoilXCoorSoilPc=-100.000
+SoilYCoorSoilPc=-100.000
+SoilIsPopCalculated=0
+SoilIsOCRCalculated=0
+SoilIsAquifer=0
+SoilUseProbDefaults=1
+SoilStdCohesion=0.00
+SoilStdPhi=0.00
+SoilStdRatioCuPc=0.00
+SoilStdRatioCuPcPassive=0.00
+SoilStdRatioCuPcActive=0.00
+SoilStdCu=0.00
+SoilStdCuTop=0.00
+SoilStdCuGradient=0.00
+SoilStdPn=0.20
+SoilDistCohesion=3
+SoilDistPhi=3
+SoilDistStressTable=3
+SoilDistRatioCuPc=3
+SoilDistRatioCuPcPassive=3
+SoilDistRatioCuPcActive=3
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+SoilDistPn=3
+SoilCorrelationCPhi=0.00
+SoilRatioCuPcPassive=0.00
+SoilRatioCuPcActive=0.00
+SoilCuPassiveTop=0.00
+SoilCuPassiveBottom=0.00
+SoilCuActiveTop=0.00
+SoilCuActiveBottom=0.00
+SoilUniformRatioCuPc=1
+SoilUniformCu=1
+SoilDesignPartialCohesion=1.25
+SoilDesignStdCohesion=-1.65
+SoilDesignPartialPhi=1.10
+SoilDesignStdPhi=-1.65
+SoilDesignPartialStressTable=1.15
+SoilDesignStdStressTable=-1.65
+SoilDesignPartialRatioCuPc=1.15
+SoilDesignStdRatioCuPc=-1.65
+SoilDesignPartialCu=1.15
+SoilDesignStdCu=-1.65
+SoilDesignPartialPOP=1.10
+SoilDesignStdPOP=-1.65
+SoilDesignPartialRRatio=1.00
+SoilDesignStdRRatio=0.00
+SoilSoilGroup=0
+SoilStdPOP=0.00
+SoilDistPOP=2
+SoilHorFluctScaleCoh=50.00
+SoilVertFluctScaleCoh=0.25
+SoilNumberOfTestsCoh=1
+SoilVarianceRatioCoh=0.75
+SoilHorFluctScalePhi=50.00
+SoilVertFluctScalePhi=0.25
+SoilNumberOfTestsPhi=1
+SoilVarianceRatioPhi=0.75
+SoilRRatio=1.0000000
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+[END OF SOIL]
+[SOIL]
+pleistoceen
+SoilColor=9276906
+SoilSoilType=2
+SoilUseSoilType=0
+SoilGamDry=18.00
+SoilGamWet=20.00
+SoilRestSlope=1
+SoilCohesion=0.00
+SoilPhi=30.00
+SoilDilatancy=30.00
+SoilCuTop=0.00
+SoilCuBottom=0.00
+SoilCuGradient=0.00
+SoilStressTableName=
+SoilBondStressTableName=
+SoilMatStrengthType=0
+SoilProbInputValues=0
+SoilRatioCuPc=0.22
+SoilStrengthIncreaseExponent=0.80
+SoilPOPTop=0.00
+SoilPOPBottom=0.00
+SoilAdditionalFactorLEM=1.00
+SoilPc=0.00E+00
+SoilPOP=0.00
+SoilRheologicalCoefficient=0.00
+SoilXCoorSoilPc=-100.000
+SoilYCoorSoilPc=-100.000
+SoilIsPopCalculated=0
+SoilIsOCRCalculated=0
+SoilIsAquifer=0
+SoilUseProbDefaults=1
+SoilStdCohesion=0.00
+SoilStdPhi=0.00
+SoilStdRatioCuPc=0.00
+SoilStdRatioCuPcPassive=0.00
+SoilStdRatioCuPcActive=0.00
+SoilStdCu=0.00
+SoilStdCuTop=0.00
+SoilStdCuGradient=0.00
+SoilStdPn=0.20
+SoilDistCohesion=3
+SoilDistPhi=3
+SoilDistStressTable=3
+SoilDistRatioCuPc=3
+SoilDistRatioCuPcPassive=3
+SoilDistRatioCuPcActive=3
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+SoilDistPn=3
+SoilCorrelationCPhi=0.00
+SoilRatioCuPcPassive=0.00
+SoilRatioCuPcActive=0.00
+SoilCuPassiveTop=0.00
+SoilCuPassiveBottom=0.00
+SoilCuActiveTop=0.00
+SoilCuActiveBottom=0.00
+SoilUniformRatioCuPc=1
+SoilUniformCu=1
+SoilDesignPartialCohesion=1.25
+SoilDesignStdCohesion=-1.65
+SoilDesignPartialPhi=1.10
+SoilDesignStdPhi=-1.65
+SoilDesignPartialStressTable=1.15
+SoilDesignStdStressTable=-1.65
+SoilDesignPartialRatioCuPc=1.15
+SoilDesignStdRatioCuPc=-1.65
+SoilDesignPartialCu=1.15
+SoilDesignStdCu=-1.65
+SoilDesignPartialPOP=1.10
+SoilDesignStdPOP=-1.65
+SoilDesignPartialRRatio=1.00
+SoilDesignStdRRatio=0.00
+SoilSoilGroup=0
+SoilStdPOP=0.00
+SoilDistPOP=2
+SoilHorFluctScaleCoh=50.00
+SoilVertFluctScaleCoh=0.25
+SoilNumberOfTestsCoh=1
+SoilVarianceRatioCoh=0.75
+SoilHorFluctScalePhi=50.00
+SoilVertFluctScalePhi=0.25
+SoilNumberOfTestsPhi=1
+SoilVarianceRatioPhi=0.75
+SoilRRatio=1.0000000
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+[END OF SOIL]
+[SOIL]
+zand (ophoogmateriaal)
+SoilColor=11316396
+SoilSoilType=2
+SoilUseSoilType=0
+SoilGamDry=18.00
+SoilGamWet=20.00
+SoilRestSlope=1
+SoilCohesion=0.00
+SoilPhi=30.00
+SoilDilatancy=30.00
+SoilCuTop=0.00
+SoilCuBottom=0.00
+SoilCuGradient=0.00
+SoilStressTableName=
+SoilBondStressTableName=
+SoilMatStrengthType=0
+SoilProbInputValues=0
+SoilRatioCuPc=0.22
+SoilStrengthIncreaseExponent=0.80
+SoilPOPTop=0.00
+SoilPOPBottom=0.00
+SoilAdditionalFactorLEM=1.00
+SoilPc=0.00E+00
+SoilPOP=0.00
+SoilRheologicalCoefficient=0.00
+SoilXCoorSoilPc=-100.000
+SoilYCoorSoilPc=-100.000
+SoilIsPopCalculated=0
+SoilIsOCRCalculated=0
+SoilIsAquifer=0
+SoilUseProbDefaults=1
+SoilStdCohesion=0.00
+SoilStdPhi=0.00
+SoilStdRatioCuPc=0.00
+SoilStdRatioCuPcPassive=0.00
+SoilStdRatioCuPcActive=0.00
+SoilStdCu=0.00
+SoilStdCuTop=0.00
+SoilStdCuGradient=0.00
+SoilStdPn=0.20
+SoilDistCohesion=3
+SoilDistPhi=3
+SoilDistStressTable=3
+SoilDistRatioCuPc=3
+SoilDistRatioCuPcPassive=3
+SoilDistRatioCuPcActive=3
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+SoilDistPn=3
+SoilCorrelationCPhi=0.00
+SoilRatioCuPcPassive=0.00
+SoilRatioCuPcActive=0.00
+SoilCuPassiveTop=0.00
+SoilCuPassiveBottom=0.00
+SoilCuActiveTop=0.00
+SoilCuActiveBottom=0.00
+SoilUniformRatioCuPc=1
+SoilUniformCu=1
+SoilDesignPartialCohesion=1.25
+SoilDesignStdCohesion=-1.65
+SoilDesignPartialPhi=1.10
+SoilDesignStdPhi=-1.65
+SoilDesignPartialStressTable=1.15
+SoilDesignStdStressTable=-1.65
+SoilDesignPartialRatioCuPc=1.15
+SoilDesignStdRatioCuPc=-1.65
+SoilDesignPartialCu=1.15
+SoilDesignStdCu=-1.65
+SoilDesignPartialPOP=1.10
+SoilDesignStdPOP=-1.65
+SoilDesignPartialRRatio=1.00
+SoilDesignStdRRatio=0.00
+SoilSoilGroup=0
+SoilStdPOP=0.00
+SoilDistPOP=2
+SoilHorFluctScaleCoh=50.00
+SoilVertFluctScaleCoh=0.25
+SoilNumberOfTestsCoh=1
+SoilVarianceRatioCoh=0.75
+SoilHorFluctScalePhi=50.00
+SoilVertFluctScalePhi=0.25
+SoilNumberOfTestsPhi=1
+SoilVarianceRatioPhi=0.75
+SoilRRatio=1.0000000
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+[END OF SOIL]
+[SOIL]
+teelaarde (ophgmateriaal)
+SoilColor=6923673
+SoilSoilType=2
+SoilUseSoilType=0
+SoilGamDry=11.00
+SoilGamWet=11.00
+SoilRestSlope=1
+SoilCohesion=0.50
+SoilPhi=20.00
+SoilDilatancy=20.00
+SoilCuTop=0.00
+SoilCuBottom=0.00
+SoilCuGradient=0.00
+SoilStressTableName=
+SoilBondStressTableName=
+SoilMatStrengthType=0
+SoilProbInputValues=0
+SoilRatioCuPc=0.22
+SoilStrengthIncreaseExponent=0.80
+SoilPOPTop=0.00
+SoilPOPBottom=0.00
+SoilAdditionalFactorLEM=1.00
+SoilPc=0.00E+00
+SoilPOP=0.00
+SoilRheologicalCoefficient=0.00
+SoilXCoorSoilPc=-100.000
+SoilYCoorSoilPc=-100.000
+SoilIsPopCalculated=0
+SoilIsOCRCalculated=0
+SoilIsAquifer=0
+SoilUseProbDefaults=1
+SoilStdCohesion=0.00
+SoilStdPhi=0.00
+SoilStdRatioCuPc=0.00
+SoilStdRatioCuPcPassive=0.00
+SoilStdRatioCuPcActive=0.00
+SoilStdCu=0.00
+SoilStdCuTop=0.00
+SoilStdCuGradient=0.00
+SoilStdPn=0.20
+SoilDistCohesion=3
+SoilDistPhi=3
+SoilDistStressTable=3
+SoilDistRatioCuPc=3
+SoilDistRatioCuPcPassive=3
+SoilDistRatioCuPcActive=3
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+SoilDistPn=3
+SoilCorrelationCPhi=0.00
+SoilRatioCuPcPassive=0.00
+SoilRatioCuPcActive=0.00
+SoilCuPassiveTop=0.00
+SoilCuPassiveBottom=0.00
+SoilCuActiveTop=0.00
+SoilCuActiveBottom=0.00
+SoilUniformRatioCuPc=1
+SoilUniformCu=1
+SoilDesignPartialCohesion=1.25
+SoilDesignStdCohesion=-1.65
+SoilDesignPartialPhi=1.10
+SoilDesignStdPhi=-1.65
+SoilDesignPartialStressTable=1.15
+SoilDesignStdStressTable=-1.65
+SoilDesignPartialRatioCuPc=1.15
+SoilDesignStdRatioCuPc=-1.65
+SoilDesignPartialCu=1.15
+SoilDesignStdCu=-1.65
+SoilDesignPartialPOP=1.10
+SoilDesignStdPOP=-1.65
+SoilDesignPartialRRatio=1.00
+SoilDesignStdRRatio=0.00
+SoilSoilGroup=0
+SoilStdPOP=0.00
+SoilDistPOP=2
+SoilHorFluctScaleCoh=50.00
+SoilVertFluctScaleCoh=0.25
+SoilNumberOfTestsCoh=1
+SoilVarianceRatioCoh=0.75
+SoilHorFluctScalePhi=50.00
+SoilVertFluctScalePhi=0.25
+SoilNumberOfTestsPhi=1
+SoilVarianceRatioPhi=0.75
+SoilRRatio=1.0000000
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+[END OF SOIL]
+[SOIL]
+Ophoogklei 17kN/m3
+SoilColor=5866717
+SoilSoilType=2
+SoilUseSoilType=0
+SoilGamDry=17.00
+SoilGamWet=17.00
+SoilRestSlope=1
+SoilCohesion=3.33
+SoilPhi=26.78
+SoilDilatancy=26.78
+SoilCuTop=0.00
+SoilCuBottom=0.00
+SoilCuGradient=0.00
+SoilStressTableName=
+SoilBondStressTableName=
+SoilMatStrengthType=0
+SoilProbInputValues=0
+SoilRatioCuPc=0.22
+SoilStrengthIncreaseExponent=0.80
+SoilPOPTop=0.00
+SoilPOPBottom=0.00
+SoilAdditionalFactorLEM=1.00
+SoilPc=0.00E+00
+SoilPOP=0.00
+SoilRheologicalCoefficient=0.00
+SoilXCoorSoilPc=-100.000
+SoilYCoorSoilPc=-100.000
+SoilIsPopCalculated=0
+SoilIsOCRCalculated=0
+SoilIsAquifer=0
+SoilUseProbDefaults=1
+SoilStdCohesion=0.00
+SoilStdPhi=0.00
+SoilStdRatioCuPc=0.00
+SoilStdRatioCuPcPassive=0.00
+SoilStdRatioCuPcActive=0.00
+SoilStdCu=0.00
+SoilStdCuTop=0.00
+SoilStdCuGradient=0.00
+SoilStdPn=0.20
+SoilDistCohesion=3
+SoilDistPhi=3
+SoilDistStressTable=3
+SoilDistRatioCuPc=3
+SoilDistRatioCuPcPassive=3
+SoilDistRatioCuPcActive=3
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+SoilDistPn=3
+SoilCorrelationCPhi=0.00
+SoilRatioCuPcPassive=0.00
+SoilRatioCuPcActive=0.00
+SoilCuPassiveTop=0.00
+SoilCuPassiveBottom=0.00
+SoilCuActiveTop=0.00
+SoilCuActiveBottom=0.00
+SoilUniformRatioCuPc=1
+SoilUniformCu=1
+SoilDesignPartialCohesion=1.25
+SoilDesignStdCohesion=-1.65
+SoilDesignPartialPhi=1.10
+SoilDesignStdPhi=-1.65
+SoilDesignPartialStressTable=1.15
+SoilDesignStdStressTable=-1.65
+SoilDesignPartialRatioCuPc=1.15
+SoilDesignStdRatioCuPc=-1.65
+SoilDesignPartialCu=1.15
+SoilDesignStdCu=-1.65
+SoilDesignPartialPOP=1.10
+SoilDesignStdPOP=-1.65
+SoilDesignPartialRRatio=1.00
+SoilDesignStdRRatio=0.00
+SoilSoilGroup=0
+SoilStdPOP=0.00
+SoilDistPOP=2
+SoilHorFluctScaleCoh=50.00
+SoilVertFluctScaleCoh=0.25
+SoilNumberOfTestsCoh=1
+SoilVarianceRatioCoh=0.75
+SoilHorFluctScalePhi=50.00
+SoilVertFluctScalePhi=0.25
+SoilNumberOfTestsPhi=1
+SoilVarianceRatioPhi=0.75
+SoilRRatio=1.0000000
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+[END OF SOIL]
+[SOIL]
+Voetpad
+SoilColor=7187949
+SoilSoilType=2
+SoilUseSoilType=0
+SoilGamDry=18.00
+SoilGamWet=20.00
+SoilRestSlope=1
+SoilCohesion=0.00
+SoilPhi=30.00
+SoilDilatancy=30.00
+SoilCuTop=0.00
+SoilCuBottom=0.00
+SoilCuGradient=0.00
+SoilStressTableName=
+SoilBondStressTableName=
+SoilMatStrengthType=0
+SoilProbInputValues=0
+SoilRatioCuPc=0.22
+SoilStrengthIncreaseExponent=0.80
+SoilPOPTop=0.00
+SoilPOPBottom=0.00
+SoilAdditionalFactorLEM=1.00
+SoilPc=0.00E+00
+SoilPOP=0.00
+SoilRheologicalCoefficient=0.00
+SoilXCoorSoilPc=-100.000
+SoilYCoorSoilPc=-100.000
+SoilIsPopCalculated=0
+SoilIsOCRCalculated=0
+SoilIsAquifer=0
+SoilUseProbDefaults=1
+SoilStdCohesion=0.00
+SoilStdPhi=0.00
+SoilStdRatioCuPc=0.00
+SoilStdRatioCuPcPassive=0.00
+SoilStdRatioCuPcActive=0.00
+SoilStdCu=0.00
+SoilStdCuTop=0.00
+SoilStdCuGradient=0.00
+SoilStdPn=0.20
+SoilDistCohesion=3
+SoilDistPhi=3
+SoilDistStressTable=3
+SoilDistRatioCuPc=3
+SoilDistRatioCuPcPassive=3
+SoilDistRatioCuPcActive=3
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+SoilDistPn=3
+SoilCorrelationCPhi=0.00
+SoilRatioCuPcPassive=0.00
+SoilRatioCuPcActive=0.00
+SoilCuPassiveTop=0.00
+SoilCuPassiveBottom=0.00
+SoilCuActiveTop=0.00
+SoilCuActiveBottom=0.00
+SoilUniformRatioCuPc=1
+SoilUniformCu=1
+SoilDesignPartialCohesion=1.25
+SoilDesignStdCohesion=-1.65
+SoilDesignPartialPhi=1.10
+SoilDesignStdPhi=-1.65
+SoilDesignPartialStressTable=1.15
+SoilDesignStdStressTable=-1.65
+SoilDesignPartialRatioCuPc=1.15
+SoilDesignStdRatioCuPc=-1.65
+SoilDesignPartialCu=1.15
+SoilDesignStdCu=-1.65
+SoilDesignPartialPOP=1.10
+SoilDesignStdPOP=-1.65
+SoilDesignPartialRRatio=1.00
+SoilDesignStdRRatio=0.00
+SoilSoilGroup=0
+SoilStdPOP=0.00
+SoilDistPOP=2
+SoilHorFluctScaleCoh=50.00
+SoilVertFluctScaleCoh=0.25
+SoilNumberOfTestsCoh=1
+SoilVarianceRatioCoh=0.75
+SoilHorFluctScalePhi=50.00
+SoilVertFluctScalePhi=0.25
+SoilNumberOfTestsPhi=1
+SoilVarianceRatioPhi=0.75
+SoilRRatio=1.0000000
+SoilDistCu=3
+SoilDistCuTop=3
+SoilDistCuGradient=3
+[END OF SOIL]
+[END OF SOIL COLLECTION]
+
+[GEOMETRY DATA]
+[ACCURACY]
+        0.0010
+[END OF ACCURACY]
+
+[POINTS]
+     99  - Number of geometry points -
+       1        -20.000          0.080          0.000
+       2        -15.000         -0.020          0.000
+       3        -14.500         -0.010          0.000
+       4        -14.000          0.010          0.000
+       5        -13.500         -0.060          0.000
+       6        -13.000         -0.140          0.000
+       7        -12.640         -0.140          0.000
+       8        -12.500         -0.140          0.000
+       9        -12.000         -0.350          0.000
+      10        -11.500         -0.420          0.000
+      11        -10.785         -0.900          0.000
+      12        -10.366         -1.509          0.000
+      13         -9.500         -2.000          0.000
+      14         -5.915         -2.000          0.000
+      15         -4.397         -1.850          0.000
+      16         -3.528         -0.900          0.000
+      17         -3.000         -0.270          0.000
+      18         -2.784         -0.270          0.000
+      19         -2.000          0.010          0.000
+      20         -1.500          0.350          0.000
+      21          0.000          0.500          0.000
+      22          2.000          0.500          0.000
+      23          4.000         -0.200          0.000
+      24          4.500         -0.310          0.000
+      25          5.000         -0.320          0.000
+      26          5.500         -0.320          0.000
+      27          6.000         -0.390          0.000
+      28          6.500         -0.230          0.000
+      29          7.000         -0.230          0.000
+      30          7.500         -0.330          0.000
+      31          8.000         -0.430          0.000
+      32          8.500         -0.560          0.000
+      33          9.000         -0.580          0.000
+      34          9.500         -0.530          0.000
+      35         10.000         -0.510          0.000
+      36         10.500         -0.410          0.000
+      37         11.000         -0.410          0.000
+      38         11.500         -0.370          0.000
+      39         12.000         -0.330          0.000
+      40         12.500         -0.280          0.000
+      41         13.000         -0.280          0.000
+      42         13.500         -0.280          0.000
+      43         13.643         -0.280          0.000
+      44         14.000         -0.340          0.000
+      45         14.500         -0.390          0.000
+      46         15.000         -0.370          0.000
+      47         15.500         -0.430          0.000
+      48         16.000         -0.480          0.000
+      49         16.500         -0.560          0.000
+      50         17.000         -0.530          0.000
+      51         17.500         -0.570          0.000
+      52         18.000         -0.520          0.000
+      53         18.500         -0.870          0.000
+      54         19.000         -0.870          0.000
+      55         19.500         -1.110          0.000
+      56         20.000         -1.440          0.000
+      57         -1.000          0.130          0.000
+      58         -0.500          0.130          0.000
+      59          0.000          0.190          0.000
+      60          0.500          0.140          0.000
+      61          1.000          0.140          0.000
+      62          1.500          0.090          0.000
+      63          2.000          0.080          0.000
+      64          2.500          0.060          0.000
+      65          3.000         -0.010          0.000
+      66          3.500         -0.240          0.000
+      67         12.575         -0.543          0.000
+      68         13.538         -0.531          0.000
+      69        -20.000         -4.000          0.000
+      70         -2.500         -4.000          0.000
+      71         -1.750         -4.000          0.000
+      72          6.000         -4.000          0.000
+      73          6.750         -4.000          0.000
+      74         20.000         -4.000          0.000
+      75        -20.000         -6.800          0.000
+      76         -2.500         -6.800          0.000
+      77         -1.750         -7.100          0.000
+      78          6.000         -7.100          0.000
+      79          6.750         -6.800          0.000
+      80         20.000         -6.800          0.000
+      81        -20.000         -9.800          0.000
+      82         20.000         -9.800          0.000
+      83        -20.000        -10.100          0.000
+      84         20.000        -10.100          0.000
+      85        -20.000        -11.500          0.000
+      86         20.000        -11.500          0.000
+      87        -20.000        -11.700          0.000
+      88         20.000        -11.700          0.000
+      89        -20.000        -20.000          0.000
+      90         20.000        -20.000          0.000
+      91        -20.000          0.000          0.000
+      92         -1.896          0.000          0.000
+      93         -1.000         -0.100          0.000
+      94          1.500         -0.300          0.000
+      95          5.483         -0.700          0.000
+      96         11.827         -1.900          0.000
+      97         20.000         -1.900          0.000
+      98        -20.000         -2.350          0.000
+      99         20.000         -2.350          0.000
+[END OF POINTS]
+
+[CURVES]
+  91 - Number of curves -
+     1 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+         1     2
+     2 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+         2     3
+     3 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+         3     4
+     4 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+         4     5
+     5 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+         5     6
+     6 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+         6     7
+     7 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+         7     8
+     8 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+         8     9
+     9 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+         9    10
+    10 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        10    11
+    11 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        11    12
+    12 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        12    13
+    13 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        13    14
+    14 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        14    15
+    15 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        15    16
+    16 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        16    17
+    17 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        17    18
+    18 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        18    19
+    19 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        19    20
+    20 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        20    21
+    21 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        21    22
+    22 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        22    23
+    23 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        23    24
+    24 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        24    25
+    25 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        25    26
+    26 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        26    27
+    27 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        27    28
+    28 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        28    29
+    29 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        29    30
+    30 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        30    31
+    31 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        31    32
+    32 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        32    33
+    33 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        33    34
+    34 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        34    35
+    35 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        35    36
+    36 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        36    37
+    37 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        37    38
+    38 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        38    39
+    39 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        39    40
+    40 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        40    41
+    41 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        41    42
+    42 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        42    43
+    43 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        43    44
+    44 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        44    45
+    45 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        45    46
+    46 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        46    47
+    47 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        47    48
+    48 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        48    49
+    49 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        49    50
+    50 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        50    51
+    51 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        51    52
+    52 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        52    53
+    53 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        53    54
+    54 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        54    55
+    55 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        55    56
+    56 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        20    57
+    57 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        57    58
+    58 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        58    59
+    59 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        59    60
+    60 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        60    61
+    61 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        61    62
+    62 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        62    63
+    63 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        63    64
+    64 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        64    65
+    65 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        65    66
+    66 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        66    23
+    67 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        40    67
+    68 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        67    68
+    69 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        68    43
+    70 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        69    70
+    71 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        70    71
+    72 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        71    72
+    73 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        72    73
+    74 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        73    74
+    75 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        75    76
+    76 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        76    77
+    77 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        77    78
+    78 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        78    79
+    79 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        79    80
+    80 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        81    82
+    81 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        83    84
+    82 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        85    86
+    83 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        87    88
+    84 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        89    90
+    85 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        91    92
+    86 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        92    93
+    87 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        93    94
+    88 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        94    95
+    89 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        95    96
+    90 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        96    97
+    91 - Curve number
+       2 - number of points on curve,  next line(s) are pointnumbers
+        98    99
+[END OF CURVES]
+
+[BOUNDARIES]
+  10 - Number of boundaries -
+     0 - Boundary number
+       1 - number of curves on boundary, next line(s) are curvenumbers
+        84
+     1 - Boundary number
+       1 - number of curves on boundary, next line(s) are curvenumbers
+        83
+     2 - Boundary number
+       1 - number of curves on boundary, next line(s) are curvenumbers
+        82
+     3 - Boundary number
+       1 - number of curves on boundary, next line(s) are curvenumbers
+        81
+     4 - Boundary number
+       1 - number of curves on boundary, next line(s) are curvenumbers
+        80
+     5 - Boundary number
+       5 - number of curves on boundary, next line(s) are curvenumbers
+        75    76    77    78    79
+     6 - Boundary number
+       5 - number of curves on boundary, next line(s) are curvenumbers
+        70    71    72    73    74
+     7 - Boundary number
+      63 - number of curves on boundary, next line(s) are curvenumbers
+         1     2     3     4     5     6     7     8     9    10
+        11    12    13    14    15    16    17    18    19    56
+        57    58    59    60    61    62    63    64    65    66
+        23    24    25    26    27    28    29    30    31    32
+        33    34    35    36    37    38    39    67    68    69
+        43    44    45    46    47    48    49    50    51    52
+        53    54    55
+     8 - Boundary number
+      63 - number of curves on boundary, next line(s) are curvenumbers
+         1     2     3     4     5     6     7     8     9    10
+        11    12    13    14    15    16    17    18    19    56
+        57    58    59    60    61    62    63    64    65    66
+        23    24    25    26    27    28    29    30    31    32
+        33    34    35    36    37    38    39    40    41    42
+        43    44    45    46    47    48    49    50    51    52
+        53    54    55
+     9 - Boundary number
+      55 - number of curves on boundary, next line(s) are curvenumbers
+         1     2     3     4     5     6     7     8     9    10
+        11    12    13    14    15    16    17    18    19    20
+        21    22    23    24    25    26    27    28    29    30
+        31    32    33    34    35    36    37    38    39    40
+        41    42    43    44    45    46    47    48    49    50
+        51    52    53    54    55
+[END OF BOUNDARIES]
+
+[USE PROBABILISTIC DEFAULTS BOUNDARIES]
+  10 - Number of boundaries -
+  1
+  1
+  1
+  1
+  1
+  1
+  1
+  1
+  1
+  1
+[END OF USE PROBABILISTIC DEFAULTS BOUNDARIES]
+
+[STDV BOUNDARIES]
+  10 - Number of boundaries -
+   0.00000000000000E+0000
+   0.00000000000000E+0000
+   0.00000000000000E+0000
+   0.00000000000000E+0000
+   0.00000000000000E+0000
+   0.00000000000000E+0000
+   0.00000000000000E+0000
+   0.00000000000000E+0000
+   0.00000000000000E+0000
+   0.00000000000000E+0000
+[END OF STDV BOUNDARIES]
+
+[DISTRIBUTION BOUNDARIES]
+  10 - Number of boundaries -
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+[END OF DISTRIBUTION BOUNDARIES]
+
+[PIEZO LINES]
+   2 - Number of piezometric level lines -
+     1 - PlLine number
+       6 - number of curves on PlLine,  next line(s) are curvenumbers
+        85    86    87    88    89    90
+     2 - PlLine number
+       1 - number of curves on PlLine,  next line(s) are curvenumbers
+        91
+[END OF PIEZO LINES]
+
+[PHREATIC LINE]
+   1 - Number of the piezometric level line acting as phreatic line -
+[END OF PHREATIC LINE]
+
+[WORLD CO-ORDINATES]
+          0.000 - X world 1 -
+          0.000 - Y world 1 -
+          0.000 - X world 2 -
+          0.000 - Y world 2 -
+[END OF WORLD CO-ORDINATES]
+
+[LAYERS]
+   9 - Number of layers -
+     1 - Layer number, next line is material of layer
+       pleistoceen
+       2 - Piezometric level line at top of layer
+       2 - Piezometric level line at bottom of layer
+       1 - Boundarynumber at top of layer
+       0 - Boundarynumber at bottom of layer
+     2 - Layer number, next line is material of layer
+       basisveen
+      99 - Piezometric level line at top of layer
+      99 - Piezometric level line at bottom of layer
+       2 - Boundarynumber at top of layer
+       1 - Boundarynumber at bottom of layer
+     3 - Layer number, next line is material of layer
+       klei-2  (13,5 - 15,0)-2
+      99 - Piezometric level line at top of layer
+      99 - Piezometric level line at bottom of layer
+       3 - Boundarynumber at top of layer
+       2 - Boundarynumber at bottom of layer
+     4 - Layer number, next line is material of layer
+       basisveen
+      99 - Piezometric level line at top of layer
+      99 - Piezometric level line at bottom of layer
+       4 - Boundarynumber at top of layer
+       3 - Boundarynumber at bottom of layer
+     5 - Layer number, next line is material of layer
+       klei-2  (13,5 - 15,0)-2
+       1 - Piezometric level line at top of layer
+       1 - Piezometric level line at bottom of layer
+       5 - Boundarynumber at top of layer
+       4 - Boundarynumber at bottom of layer
+     6 - Layer number, next line is material of layer
+       hollandveen
+       1 - Piezometric level line at top of layer
+       1 - Piezometric level line at bottom of layer
+       6 - Boundarynumber at top of layer
+       5 - Boundarynumber at bottom of layer
+     7 - Layer number, next line is material of layer
+       klei-2  (13,5 - 15,0)
+       1 - Piezometric level line at top of layer
+       1 - Piezometric level line at bottom of layer
+       7 - Boundarynumber at top of layer
+       6 - Boundarynumber at bottom of layer
+     8 - Layer number, next line is material of layer
+       Voetpad
+       1 - Piezometric level line at top of layer
+       1 - Piezometric level line at bottom of layer
+       8 - Boundarynumber at top of layer
+       7 - Boundarynumber at bottom of layer
+     9 - Layer number, next line is material of layer
+       Ophoogklei 17kN/m3
+       1 - Piezometric level line at top of layer
+       1 - Piezometric level line at bottom of layer
+       9 - Boundarynumber at top of layer
+       8 - Boundarynumber at bottom of layer
+[END OF LAYERS]
+
+[END OF GEOMETRY DATA]
+[RUN IDENTIFICATION TITLES]
+Diemen Noord - AO2-124C
+dwp metrering 200
+Boring kruin E08-167 ;  Boring teen E08-168
+[END OF RUN IDENTIFICATION TITLES]
+[MODEL]
+  1 : Bishop
+  1 : C phi
+  0 : Probabilistic off
+  1 : Mean
+  0 : Geotextiles off
+  0 : Nails off
+  1 : Zone plot on
+  0 : Local measurements
+[END OF MODEL]
+[MSEEPNET]
+ Use potential file 
+  0 : Do not use water net of MSeep file
+  0 : Do not make negative pressures 0
+[END OF MSEEPNET]
+[UNIT WEIGHT WATER]
+     9.81 : Unit weight water
+[END OF UNIT WEIGHT WATER]
+[DEGREE OF CONSOLIDATION]
+   9 Number of layers 
+     9      100
+     8      100 100
+     7      100 100 100
+     6      100 100 100 100
+     5      100 100 100 100 100
+     4      100 100 100 100 100 100
+     3      100 100 100 100 100 100 100
+     2      100 100 100 100 100 100 100 100
+     1      100 100 100 100 100 100 100 100 100
+  0    capillary water not included
+[END OF DEGREE OF CONSOLIDATION]
+[DEGREE TEMPORARY LOADS]
+           100  50  50  50  50  50  50  50 100 
+  0    capillary water not included
+[END OF DEGREE TEMPORARY LOADS]
+[DEGREE EARTH QUAKE]
+           100 100 100 100 100 100 100 100 100 
+[END OF DEGREE EARTH QUAKE]
+[CIRCLES]
+        0.933            6.322      10    X-direction
+        2.004            5.785      10    Y-direction
+       -2.000           -4.000      10    Tangent lines
+        0.000            0.000       0    no fixed point used 
+[END OF CIRCLES]
+[SPENCER SLIP DATA]
+           13    Number of points
+       -1.671           -0.165
+       -1.501           -0.677
+       -0.945           -1.658
+        0.602           -2.975
+        1.841           -3.869
+        2.868           -4.248
+        4.277           -4.525
+        6.291           -4.765
+        9.058           -4.817
+       10.354           -4.618
+       11.905           -3.896
+       13.745           -2.760
+       14.303           -1.872
+[END OF SPENCER SLIP DATA]
+[SPENCER SLIP DATA 2]
+           13    Number of points
+        1.510            0.110
+        1.682           -0.115
+        1.925           -0.327
+        2.244           -0.495
+        2.685           -0.631
+        3.232           -0.783
+        3.688           -0.875
+        4.008           -0.936
+        4.402           -1.027
+        4.935           -1.133
+        5.390           -1.165
+        5.908           -1.118
+        6.470           -0.882
+[END OF SPENCER SLIP DATA 2]
+[SPENCER SLIP INTERVAL]
+  2 : Slip spencer interval
+[END OF SPENCER SLIP INTERVAL]
+[LINE LOADS]
+  1    =  number of items
+Eigen gewicht boom
+  60.30  = magnitude
+  -3.00      -0.27     = x and y co-ordinate 
+   0.00      30.00     = direction & distr angle
+[END OF LINE LOADS]
+[UNIFORM LOADS]
+  1     = number of items
+Onderhoudsbelasting
+   5.00 = magnitude 
+  -0.50       2.00 = xstart and xend 
+  20.00 = distribution angle 
+      2 = temporary load 
+[END OF UNIFORM LOADS]
+[TREE ON SLOPE]
+-10.70 = WindForce
+-2.50 = XCoordinate
+7.00 = YCoordinate
+5.00 = width of root zone
+30.0 = AngleOfDistribution
+[END OF TREE ON SLOPE]
+[EARTH QUAKE]
+     0.000 = horizontal acceleration 
+     0.000 = vertical acceleration 
+     0.000 = free water moment factor 
+[END OF EARTH QUAKE]
+[SIGMA-TAU CURVES]
+    0 = number of items
+[END OF SIGMA-TAU CURVES]
+[BOND STRESS DIAGRAMS]
+    0 = number of items
+[END OF BOND STRESS DIAGRAMS]
+[MEASURED YIELD STRESSES]
+[YIELD STRESSES]
+    0 = number of items
+[END OF YIELD STRESSES]
+[END OF MEASURED YIELD STRESSES]
+[MINIMAL REQUIRED CIRCLE DEPTH]
+      0.00     [m]
+[END OF MINIMAL REQUIRED CIRCLE DEPTH]
+[SLIP CIRCLE SELECTION]
+IsMinXEntryUsed=0
+IsMaxXEntryUsed=0
+XEntryMin=0.00
+XEntryMax=0.00
+[END OF SLIP CIRCLE SELECTION]
+[START VALUE SAFETY FACTOR]
+     1.000     [-]
+[END OF START VALUE SAFETY FACTOR]
+[REFERENCE LEVEL SU]
+  16.000    Excavation gamma above freatic level
+  18.000    Excavation gamma below freatic level
+       0    number of points
+[END OF REFERENCE LEVEL SU]
+
+[LIFT SLIP DATA]
+        0.000            0.000       1    X-direction Left
+        0.000            0.000       1    Y-direction Left
+        0.000            0.000       1    X-direction Right
+        0.000            0.000       1    Y-direction Right
+        0.000            0.000       1    Y-direction tangent lines
+            0                             Automatic grid calculation (1)
+[END OF LIFT SLIP DATA]
+[EXTERNAL WATER LEVELS]
+     0      = No water data used 
+  0.00      = Design level 
+  0.30      = Decimate height 
+    1     norm = 1/10000 
+    1 = number of items
+Water data (1)
+     1 = Phreatic line  
+  0.00 = Level 
+ Piezo lines 
+   9 - Number of layers 
+       0         0 = Pl-top and pl-bottom 
+       0         0 = Pl-top and pl-bottom 
+       0         0 = Pl-top and pl-bottom 
+       0         0 = Pl-top and pl-bottom 
+       0         0 = Pl-top and pl-bottom 
+       0         0 = Pl-top and pl-bottom 
+       0         0 = Pl-top and pl-bottom 
+       1         1 = Pl-top and pl-bottom 
+       1         1 = Pl-top and pl-bottom 
+[END OF EXTERNAL WATER LEVELS]
+[MODEL FACTOR]
+            1.00 = Limit value stability factor
+            0.08 = Standard deviation for limit value stability factor
+            0.00 = Reference standard deviation for degree of consolidation
+          100.00 = Length of the section
+    0 = Use contribution of end section
+            0.00 = Lateral stress ratio
+            0.25 = Coefficient of variation contribution edge of section
+[END OF MODEL FACTOR]
+[END SECTION]
+           0.000 = Half length of the section
+          0  Use friction end section 
+[END OF END SECTION]
+[CALCULATION OPTIONS]
+MoveCalculationGrid=1
+ProbCalculationType=2
+SearchMethod=0
+[END OF CALCULATION OPTIONS]
+[PROBABILISTIC DEFAULTS]
+CohesionVariationTotal=0.25
+CohesionDesignPartial=1.25
+CohesionDesignStdDev=-1.65
+CohesionDistribution=3
+PhiVariationTotal=0.15
+PhiDesignPartial=1.10
+PhiDesignStdDev=-1.65
+PhiDistribution=3
+StressTableVariationTotal=0.20
+StressTableDesignPartial=1.15
+StressTableDesignStdDev=-1.65
+StressTableDistribution=3
+RatioCuPcVariationTotal=0.25
+RatioCuPcDesignPartial=1.15
+RatioCuPcDesignStdDev=-1.65
+RatioCuPcDistribution=3
+CuVariationTotal=0.25
+CuDesignPartial=1.15
+CuDesignStdDev=-1.65
+CuDistribution=3
+POPVariationTotal=0.10
+POPDesignPartial=1.10
+POPDesignStdDev=-1.65
+POPDistribution=3
+CompressionRatioVariationTotal=0.25
+CompressionRatioDesignPartial=1.00
+CompressionRatioDesignStdDev=0.00
+CompressionRatioDistribution=3
+ConsolidationCoefTotalStdDev=20.00
+ConsolidationCoefDesignPartial=1.00
+ConsolidationCoefDesignStdDev=1.65
+ConsolidationCoefDistribution=2
+HydraulicPressureTotalStdDev=0.50
+HydraulicPressureDesignPartial=1.00
+HydraulicPressureDesignStdDev=1.65
+HydraulicPressureDistribution=3
+LimitValueBishopMean=1.00
+LimitValueBishopStdDev=0.08
+LimitValueBishopDistribution=3
+LimitValueVanMean=0.95
+LimitValueVanStdDev=0.08
+LimitValueVanDistribution=3
+[END OF PROBABILISTIC DEFAULTS]
+[NEWZONE PLOT DATA]
+        0.10 = Diketable Height [m]
+        1.50 = Width top rest profile [m]
+        0.00 = X co-ordinate indicating start of zone [m]
+        0.00 = Boundary of M.H.W influence at X [m]
+        0.00 = Boundary of M.H.W influence at Y [m]
+        1.19 = Required safety in zone 1a
+        1.11 = Required safety in zone 1b
+        1.00 = Required safety in zone 2a
+        1.00 = Required safety in zone 2b
+        0.00 = Left side minimum road [m]
+        0.00 = Right side minimum road [m]
+        0.90 = Required safety in zone 3a
+        0.90 = Required safety in zone 3b
+   1    Stability calculation at right side
+        0.50 = Remolding reduction factor
+        0.80 = Schematization reduction factor
+   1    Overtopping condition less or equal 0.1 l/m/s
+[END OF NEWZONE PLOT DATA]
+[HORIZONTAL BALANCE]
+HorizontalBalanceXLeft=0.000
+HorizontalBalanceXRight=0.000
+HorizontalBalanceYTop=0.00
+HorizontalBalanceYBottom=0.00
+HorizontalBalanceNYInterval=1
+[END OF HORIZONTAL BALANCE]
+[REQUESTED CIRCLE SLICES]
+ 30     = number of slices
+[END OF REQUESTED CIRCLE SLICES]
+[REQUESTED LIFT SLICES]
+ 50     = number of slices
+[END OF REQUESTED LIFT SLICES]
+[REQUESTED SPENCER SLICES]
+ 50     = number of slices
+[END OF REQUESTED SPENCER SLICES]
+[SOIL RESISTANCE]
+SoilResistanceDowelAction=1
+SoilResistancePullOut=1
+[END OF SOIL RESISTANCE]
+[GENETIC ALGORITHM OPTIONS BISHOP]
+PopulationCount=30
+GenerationCount=30
+EliteCount=2
+MutationRate=0.200
+CrossOverScatterFraction=1.000
+CrossOverSinglePointFraction=0.000
+CrossOverDoublePointFraction=0.000
+MutationJumpFraction=1.000
+MutationCreepFraction=0.000
+MutationInverseFraction=0.000
+MutationCreepReduction=0.050
+[END OF GENETIC ALGORITHM OPTIONS BISHOP]
+[GENETIC ALGORITHM OPTIONS LIFTVAN]
+PopulationCount=40
+GenerationCount=40
+EliteCount=2
+MutationRate=0.250
+CrossOverScatterFraction=1.000
+CrossOverSinglePointFraction=0.000
+CrossOverDoublePointFraction=0.000
+MutationJumpFraction=1.000
+MutationCreepFraction=0.000
+MutationInverseFraction=0.000
+MutationCreepReduction=0.050
+[END OF GENETIC ALGORITHM OPTIONS LIFTVAN]
+[GENETIC ALGORITHM OPTIONS SPENCER]
+PopulationCount=50
+GenerationCount=50
+EliteCount=2
+MutationRate=0.300
+CrossOverScatterFraction=0.000
+CrossOverSinglePointFraction=0.700
+CrossOverDoublePointFraction=0.300
+MutationJumpFraction=0.000
+MutationCreepFraction=0.900
+MutationInverseFraction=0.100
+MutationCreepReduction=0.050
+[END OF GENETIC ALGORITHM OPTIONS SPENCER]
+[NAIL TYPE DEFAULTS]
+NailTypeLengthNail=0.00
+NailTypeDiameterNail=0.00
+NailTypeDiameterGrout=0.00
+NailTypeYieldForceNail=0.00
+NailTypePlasticMomentNail=0.00
+NailTypeBendingStiffnessNail=0.00E+00
+NailTypeUseFacingOrBearingPlate=0
+[END OF NAIL TYPE DEFAULTS]
+[END OF INPUT FILE]
